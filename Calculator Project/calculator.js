@@ -107,7 +107,7 @@ return;
 }
 //ensures that Ac clears the numbers from the Calculator
 if (target.classList.contains('all-clear')) {
-    Calculator_Reste();
+    Calculator_Reset();
     Update_Display();
     return;
 }
