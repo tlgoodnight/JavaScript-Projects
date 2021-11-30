@@ -1,40 +1,65 @@
 #menuBG {
     width:400px;
-    height:470px;
-    margin:10px auto;
+    height:700px;
+    margin:5px auto;
+    background-color: dodgerblue;
 }
 #frmMenu {
     width:400px;
-    height:200px;
+    height:400px;
 }
 #totalPrice {
     width:200px;
     height:190px;
-    margin: 0 auto;
-    float: right;
+    margin: 0 right;
+    padding-left: center;
+    float: bottom;
+    text-align: right;
 }
 .left {
     width: 200px;
     height: 200px;
     float: left;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: tomato;
+}
+.center {
+    width:200px;
+    height:200px;
+    float: right;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: tomato;
 }
 .right {
     width:200px;
     height:200px;
-    float:right;
+    float: right;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: tomato;
 }
 #showText {
     width:200px;
     height:200px;
-    float:right;
+    text-align: right;
+    float: right;
 }
 #cart {
     top:0;margin:0px auto;
     width:400px;
-    height:200px;
+    height:400px;
+    float: right;
 }
 #btnOrder {
     margin:10px 0px 0px 100px;
     width:100px;
     height:40px;
+}
+h1 {
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   color: rgb(82, 82, 82);
+   text-align: center;
+}
+h3 { 
+    font-family: "Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif";
+    color: silver;
 }
