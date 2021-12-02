@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Types of Dolphins</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="..//One-Page Website/one_page_website.css">
+		<script src="one_page_website.js" defer></script>
+	</head>
+	<body>
+		<!--Nav-->
+		<div>
+			<div>
+				<ul>
+					<a href="#home" id="link"><li>HOME</li></a>
+					<a href="#gallery"><li>GALLERY</li></a>
+					<a href="#contact"><li>CONTACT</li></a>
+				</ul>
+			</div>
+		</div>
+		<!--End Nav-->
+		
+		<!--Home-->
+		<div id="home">
+			<div>
+				<div>	
+					<h1>Dolphins </h1><br>
+					
+					<a href="https://en.wikipedia.org/wiki/Dolphin" target="new" alt="This page is not loading contact the AMAZING CODER!!">Dolphin WIKI</a>
+					<p></p>
+					<article>
+					<details>
+					<summary>How many species of dolphins are there?</summary>
+					<p>Currently there are 49 dolphin and porpoise species which are grouped into six families: the oceanic dolphin family is by far the largest with 38 members; the porpoise family has seven members; and there are four river dolphin families, each containing just one species.</p>
+					</details>
+					</article>
+				</div>
+			</div>
+		</div>
+		
+		<!--End Home-->
+		<body>
+
+			<h2 style="text-align:center">Lightbox</h2>
+			
+			<div class="row">
+			  <div class="column">
+				<img src="../One-Page Website/Images/Thumb/thumbnail_1.JPG" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+			  </div>
+			  <div class="column">
+				<img src="../One-Page Website/Images/Thumb/thumbnail_2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+			  </div>
+			  <div class="column">
+				<img src="../One-Page Website/Images/Thumb/thumbnail_3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+			  </div>
+			  <div class="column">
+				<img src="../One-Page Website/Images/Thumb/thumbnail_4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+			  </div>
+			  <div class="column">
+				<img src="../One-Page Website/Images/Thumb/thumbnail_5.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+			  </div>
+			  <div class="column">
+				<img src="../One-Page Website/Images/Thumb/thumbnail_6.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+			  </div>
+			  <div class="column">
+				<img src="../One-Page Website/Images/Thumb/thumbnail_7.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+			  </div>
+			  <div class="column">
+				<img src="../One-Page Website/Images/Thumb/thumbnail_8.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+			  </div>
+			  <div class="column">
+				<img src="../One-Page Website/Images/Thumb/thumbnail_9.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+			  </div>
+			</div>
+			
+			<div id="myModal" class="modal">
+			  <span class="close cursor" onclick="closeModal()">&times;</span>
+			  <div class="modal-content">
+			
+				<div class="mySlides">
+				  <div class="numbertext">1 / 9</div>
+				  <img src="../One-Page Website/Images/Thumb/thumbnail_1.JPG" style="width:100%">
+				</div>
+			
+				<div class="mySlides">
+				  <div class="numbertext">2 / 9</div>
+				  <img src="../One-Page Website/Images/Thumb/thumbnail_2.jpg" style="width:100%">
+				</div>
+			
+				<div class="mySlides">
+				  <div class="numbertext">3 / 9</div>
+				  <img src="../One-Page Website/Images/Thumb/thumbnail_3.jpg" style="width:100%">
+				</div>
+				
+				<div class="mySlides">
+				  <div class="numbertext">4 / 9</div>
+				  <img src="../One-Page Website/Images/Thumb/thumbnail_4.jpg" style="width:100%">
+				</div>
+				
+				<div class="mySlides">
+					<div class="numbertext">5 / 9</div>
+					<img src="../One-Page Website/Images/Thumb/thumbnail_5.jpg" style="width:100%">
+				  </div>
+				  <div class="mySlides">
+					<div class="numbertext">6 / 9</div>
+					<img src="../One-Page Website/Images/Thumb/thumbnail_6.jpg" style="width:100%">
+				  </div>
+				  <div class="mySlides">
+					<div class="numbertext">7 / 9</div>
+					<img src="../One-Page Website/Images/Thumb/thumbnail_7.jpg" style="width:100%">
+				  </div>
+				  <div class="mySlides">
+					<div class="numbertext">8 / 9</div>
+					<img src="../One-Page Website/Images/Thumb/thumbnail_8.jpg" style="width:100%">
+				  </div>
+				  <div class="mySlides">
+					<div class="numbertext">9 / 9</div>
+					<img src="../One-Page Website/Images/Thumb/thumbnail_9.jpg" style="width:100%">
+				  </div>
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			
+				<div class="caption-container">
+				  <p id="caption"></p>
+				</div>
+			
+			
+				<div class="column">
+				  <img class="demo cursor" src="../One-Page Website/Images/Thumb/thumbnail_1.JPG" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+				</div>
+				<div class="column">
+				  <img class="demo cursor" src="../One-Page Website/Images/Thumb/thumbnail_2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+				</div>
+				<div class="column">
+				  <img class="demo cursor" src="../One-Page Website/Images/Thumb/thumbnail_3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+				</div>
+				<div class="column">
+				  <img class="demo cursor" src="../One-Page Website/Images/Thumb/thumbnail_4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+				</div>
+				<div class="column">
+					<img class="demo cursor" src="../One-Page Website/Images/Thumb/thumbnail_5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Northern Lights">
+				</div>
+				<div class="column">
+					<img class="demo cursor" src="../One-Page Website/Images/Thumb/thumbnail_6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Northern Lights">
+				</div>
+				<div class="column">
+					<img class="demo cursor" src="../One-Page Website/Images/Thumb/thumbnail_7.jpg" style="width:100%" onclick="currentSlide(7)" alt="Northern Lights">
+				</div>
+				<div class="column">
+					<img class="demo cursor" src="../One-Page Website/Images/Thumb/thumbnail_8.jpg" style="width:100%" onclick="currentSlide(8)" alt="Northern Lights">
+				</div>
+				<div class="column">
+					<img class="demo cursor" src="../One-Page Website/Images/Thumb/thumbnail_9.jpg" style="width:100%" onclick="currentSlide(0)" alt="Northern Lights">
+				</div>
+			  </div>
+			</div>
+		<!--Video-->
+		<section>
+			<div>
+				<h1>A short video about Dolphins in Wild vs Captivity!</h1>
+				<iframe width="644" height="362" src="https://www.youtube.com/embed/rSCIz8snP6A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</section>
+		<!--End of Video Section-->
+		<!--CONTACT-->
+		<section id="contact">
+			<div class="container"> 
+				<div class="heading-padding">
+					<h1 class="heading-padding">CONTACT</h1>
+					<div class="information"></div>
+						<h2><span>Contact us below for more information.</span>
+						<br/>  We want to educate you on how to help the dophins.
+						<h2>We want you to be informed with the facts.</h2>
+						<br/>
+					<p>
+						Please provide us with your basic contact information.
+					</p>
+					<div class="form-contact">
+						<form action="" method="post">
+							<input class="contact" type="text" value="" placeholder="First Name">
+							<input class="contact" type="text" value="" placeholder="Last Name">
+							<input class="contact" type="text" value="" placeholder="Email Address">
+							<input class="contact" type="text" value="" placeholder="Phone Number">
+							<div class="form-spacer">
+								<label class="terms">Terms and Conditions</label>
+							</div>
+							<div class="submit">
+								<input type="submit" value="Submit">
+							</div>
+						</form>
+					</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--End Contact-->
+		<!--Footer-->
+		<div>
+		   Author: Tammy Goodnight &nbsp; &copy; 2021
+		</div>
+		<!--End Footer-->
+	</body>
+	</html>
