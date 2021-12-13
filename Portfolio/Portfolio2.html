@@ -5,45 +5,23 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width" />
         <title>Tech Academy Portfolio</title>
+        <link rel="shortcut icon" type="img/jpg" href="../Portfolio/img/coding.png">
         <link rel="stylesheet" type="text/css" href="../Portfolio/stylesheet/Portfolio2.css">
-        <script src ="../Portfolio/Javascript/Portfolio2.js"></script>
+        
     </head>
 
     <!--Body-->
     <body class="Background">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
         <!--Navbar-->
         <div class="Navbar">
             <a class="active" href="#Home">Home</a>
+            <a href="#Slideshow">Slideshow</a>
             <a href="#About">About</a>
             <a href="#GitHub">GitHub</a>
-            <a href="#Contact">Contact</a>
+            <!- Onclick and on double click functions added to open and close the contact form-->
+            <a onclick="openForm()" ondbleclick="closeForm()" class="contact">Contact</a>
         </div>
 
         <!--Breaks inserted to add space between navbar and the first heading-->
@@ -73,7 +51,57 @@ $(document).ready(function(){
                 </p>
             </strong>
         </div>
+ <!-- Slideshow section added -->
+ <div id="Slideshow">
+    <div id="Slideshow_Background"> 
+        <div id="Slideshow_Container">
+            <!-- Slide 1 of 6 -->
+            <div class="mySlides fade">
+                <img class="Slideshow_Images" src="../Portfolio/img/hands-computer-keyboard-business-women-35579763.jpg" alt="Picture of yourself">
+                <div class="text">I'm available to assist you on your project!</div>
+            </div>
+            <!-- Slide 2 of 6 -->
+            <div class="mySlides fade">
+                <img class="Slideshow_Images" src="../Portfolio/img/HTML_CSS_and_JavaScript.jpeg" alt="HTML, CSS, and JS logos"> 
+                <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
+            </div>
+            <!-- Slide 3 of 6 -->
+            <div class="mySlides fade">
+                <img class="Slideshow_Images" src="../Portfolio/img/Python.png" alt="Python logo">
+                <div class="text">the popular programming language Python,</div>
+            </div>
+            <!-- Slide 4 of 6 -->
+            <div class="mySlides fade">
+                <img class="Slideshow_Images" src="../Portfolio/img/programs.jpg" alt="C# logo">
+                <div class="text">C#, .NET Framework, ASP.NET, MVC, </div>
+            </div>
+            <!-- Slide 5 of 6 -->
+            <div class="mySlides fade">
+                <img class="Slideshow_Images" src="../Portfolio/img/SQL_and_Database.jpg" alt="SQL logo"> 
+                <div class="text">back end development, databases and SQL.</div>
+            </div>
+            <!-- Slide 6 of 6 -->
+            <div class="mySlides fade">
+                <img class="Slideshow_Images" src="../Portfolio/img/Contact.jpg" alt="Replace with a picture of your choosing"> 
+                <div class="text"><a class="white-text contact" onclick="openForm()">Contact me now!</a></div> 
+            </div>
+            <!-- Previous and next buttons -->
+            <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br> <!-- Adds a space between the slideshow images and the dots -->
 
+        <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+        <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+            <span class="dot" onclick="currentSlide(6)"></span> 
+        </div>
+    </div>
+</div>
         <!--About section-->
         <div class="Row" id="About">
             <!--Left column-->
@@ -118,38 +146,32 @@ $(document).ready(function(){
                 <img src="./img/contact1.png" alt="Contact_Image">
             </div>
             <!--Contact form, right column-->
-            <div class="Column_2 Column_tall">
-            <button id="openbutton" onclick="openForm()">Contact Form</button>
-            <div class="formpopup" id="myForm">
-                <form name="myForm" action="https://formspree.io/f/moqyzjzw" onsubmit="return validateForm()" method="POST">
-                    <label>Name:</label>
-                        <input type="text" id="Name" name="Name" placeholder="Please enter your name here">
-                    <br>
-                    <label>Email:</label>
-                        <input type="text" id="Email" name="Email" placeholder="Please enter your Email here">
-                    <br>
-                    <label>Phone:</label>
-                        <input type="text" id="Phone" name="Phone" placeholder="Please enter your Phone here">
-                    <br>    
-                    <label>Message:</label>
-                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
-                        <input type="submit" value="SUBMIT">
-                </form>
-              </div>
+             <!-- Contact form -->
+        <div id="Contact">
+            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+            <div class="form-popup" id="myForm">
+                 <form action="https://formspree.io/f/moqyzjzw" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
+                     <h1>Contact</h1>
+                     <label for="name"><b>Name</b></label>
+                       <input type="text" placeholder="Type your name here" name="name" required>
+                     <label for="phone"><b>Phone</b></label>
+                       <input type="text" placeholder="Type your phone number here" name="phone">
+                     <label for="email"><b>Email</b></label>		
+                       <input type="text" placeholder="Type your email address here" name="email" required>
+                     <label for="message"><b>Message</b></label>
+                       <input type="text" placeholder="Type your message here" name="message">
+          
+                     <button type="submit" class="btn">SUBMIT</button>
+                     <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                 </form>
             </div>
-        </div>
+         </div>
     
         <!--Footer section-->
         <footer>
-            <p>
-                <br>
-                <br>
-                <br>
-                <p class="center">&copy Tammy Goodnight, 2021</p>
-                <br>
-            </p>
-
+            <p>Tammy Goodnight, Tech Academy, 2021</p>
         </footer>
+        <script src ="../Portfolio/Javascript/Portfolio2.js"></script>
     </body>
 
 </html>
